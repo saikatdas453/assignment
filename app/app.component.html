@@ -1,0 +1,28 @@
+<ul>
+  <li *ngFor="let data of course ">
+      <p>{{data.c1}}</p>
+      <p> {{data.c2}} </p>
+      <p> {{data.c3}} </p>
+      <p> {{data.c4}}</p>
+      
+  </li>
+</ul>
+<input type="text" [value]="col">
+<button (click)="show()">click</button><br>
+<br>
+<br>
+{{title}}
+<input type="text" [(ngModel)]="title" /><br>
+<br>
+<br>
+<input type="text" [ngModel]="title" />
+<br>
+
+{{ title| lowercase}}
+{{ title| uppercase}}
+
+<app-basic>
+  {{ title| lowercase}}
+  {{ title| uppercase}}
+
+</app-basic>
